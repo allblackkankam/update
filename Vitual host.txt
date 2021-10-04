@@ -1,0 +1,12 @@
+Listen 8107
+NameVirtualHost *:8107
+<VirtualHost *:8107>
+    ServerName localhost
+    DocumentRoot "E:\Website\labmanager"                        
+    <Directory "E:\Website\labmanager">                           
+    	Options +Indexes +Includes +FollowSymLinks +MultiViews
+    	AllowOverride All
+    	Require all granted
+    	Allow From all
+   </Directory>
+</VirtualHost>
